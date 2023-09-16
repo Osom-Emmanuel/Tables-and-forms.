@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Forms page</title>
+</head>
+<style>
+    body{
+        padding-left: 1em;
+        text-align: center;
+    }
+table, th, td, tr{
+    border: 1px solid red;
+    /* border-radius: 1em; */
+    border-collapse: collapse;
+}
+tr:nth-child(2n){
+    background-color: yellow;
+}
+td:nth-last-child(3n){
+    background-color: blue;
+}
+
+.submit{
+    background-color: blue;
+    padding: 1em;
+
+}
+input:hover{
+    background-color: whitesmoke;
+    border: 2px solid burlywood;
+}
+.width{
+    margin-bottom: 1em;
+}
+</style>
+<body>
+    <table style="border: 1px solid black;">
+        <thead>
+            <tr>
+                <caption>I added "thead and tbody</caption>
+                <th>Student1</th>
+                <th>Student2</th>
+                <th>Student3</th>
+                <th>Student4</th>
+                <th>Student5</th>
+                <th colspan="2">Student6</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First name</td>
+                <td>Country</td>
+                <td>State</td>
+                <td>Country</td>
+                <td>Pet's name</td>
+                <td>Friend's name</td>
+                <td>Last name</td>
+            </tr>
+             <tr>
+                <td>Abuchi</td>
+                <td>Ngosi</td>
+                <td>Eze</td>
+                <td>Nnamdi</td>
+                <td>Godgift</td>
+                <td>Emeka</td>
+                <td>PraiseGod</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+      <h1>Log in to our Favourite Cars</h1>
+      <label for="text">Names of Candidate</label><br>
+
+      <label for="text">First and Surname</label>
+      <input class="width" type="text" name="name" placeholder="  full Name"><br>
+
+      <p>Have you reached any of this age?</p>
+      <label for="yes">30</label>
+      <input class="radio2" type="radio" name="numbe2" id="30" value="30">
+      <label for="yes">40</label>
+      <input class="radio2" type="radio" name="numbe2" id="40" value="40">
+      <label for="yes">50</label>
+      <input class="radio2" type="radio" name="numbe2" id="50" value="50">
+      <label for="No">60</label>
+      <input class="radio2" type="radio" name="survey2" id="60" value="60">
+        <br>
+        <br>
+      <label for="text">Candidates height</label>
+      <input class="width" type="range" name="height" value="height" placeholder="your height"><br>
+
+      <label for="text">Candidates email</label>
+      <input class="width" type="email" name="email" placeholder="your email"><br>
+
+      <label for="color">Candidates Favourite Car Colour</label>
+      <input class="width" type="color" name="background-color" placeholder="background-color">
+
+      <p>Have you ridden a car before?</p>
+      <label for="yes">yes</label>
+      <input class="radio" type="radio" name="survey" id="yes" value="yes">
+
+      <label for="No">No</label>
+      <input class="radio" type="radio" name="survey" id="No" value="No">
+
+      <p>Select the Type of Car you want!</p>
+      <label for="Benz">Benz</label>
+      <input class="carDriven" type="checkbox" name="Benz" id="Benz" value="Benz">
+
+      <label for="Toyota">Toyota</label>
+      <input class="carDriven" type="checkbox" name="Toyota" id="Toyota" value="Toyota">
+
+      <label for="BMW">BMW</label>
+      <input class="carDriven" type="checkbox" name="BMW" id="BMW" value="BMW">
+
+      <label for="Ferrari">Ferrari</label>
+      <input class="carDriven" type="checkbox" name="Ferrari" id="Ferrari" value="Ferrari">
+
+    </form>
+    <input class="submit" type="button" value="register">
+    <script src="index.js"></script>
+</body>
+</html>
